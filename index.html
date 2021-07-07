@@ -1,59 +1,75 @@
 ﻿<!DOCTYPE html>
 <html lang="en-nz">
 <head>
-<!-- Title, Favicon and Stylesheet link -->
+<!-- Title, Favicon, W3.CSS and Stylesheet link -->
 <title> Coro Liquid Gold </title>
+<meta charset="UTF-8">
 <link href="favicon.ico" rel="icon" type="image/x-icon" />
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <meta name="description" content="The Offical Website for the Coro Liquid Gold Fundrasing product.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
-	<div id="main">
-		<div id="banner">
+	<div id="main" class="w3-mobile">
+		<div id="banner" class="w3-mobile">
 		<a href="index.html">
-		<img src="images/logo.webp" alt="Coro Liquid Gold">
+		<img src="images/logo.webp" width="800" height="200" alt="Coro Liquid Gold">
 		</a>
 		<!-- End of Banner Div -->
         </div>
-    <div id="nav">
     <!-- Navigation List -->
-    <div class="navbar">
-        <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Media</a>
-            <div class="dropdown-content">
-                <a href="photos.html">Photos</a>
-                <a href="videos.html">Videos</a>
-            </div>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-          
-        </li>
-        </ul>
+<div class="w3-bar w3-dark-grey">
+    <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-yellow">Home</a>
+    <div class="w3-dropdown-hover w3-mobile">
+      <button class="w3-button">Media <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Photos</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Videos</a>
+      </div>
     </div>
+    <a href="#" class="w3-bar-item w3-button w3-mobile">About Us</a>
+    <a href="#" class="w3-bar-item w3-button w3-mobile">Contact</a>
+  </div>
+
 		<!-- Start of content -->
-    <div id="content">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Curabitur vehicula molestie augue, vitae consequat tortor aliquam quis. 
-            Phasellus viverra tempor vehicula. Fusce et vehicula augue. Vestibulum in lobortis erat, sed vulputate velit. 
-            Vivamus malesuada, est ac ultricies accumsan, justo sapien sodales ligula, eu porttitor lacus velit eget enim. 
-            Sed feugiat libero sit amet augue facilisis placerat. Duis cursus magna imperdiet pretium molestie. 
-            Suspendisse ullamcorper ultrices nisl. Vivamus ut scelerisque orci. 
+    <div id="content" class="w3-mobile">
+        <p> Coro Liquid Gold is an innovative fundraising product for Schools. We offer 500g jars of delicious honey
+        for your school to fundraise with. We have higher profit margins and are more healthy than most other competing fundraising products as well as
+        highly personalised to fit your school and your local communities needs. We are also 100% New Zealand Owned and operated, and our honey is made, bottled and labelled in New Zealand.
         </p>
     </div>
     <!-- Start of Content 2 -->
-    <div id="content2">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Curabitur vehicula molestie augue, vitae consequat tortor aliquam quis. 
-            Phasellus viverra tempor vehicula. Fusce et vehicula augue. Vestibulum in lobortis erat, sed vulputate velit. 
-            Vivamus malesuada, est ac ultricies accumsan, justo sapien sodales ligula, eu porttitor lacus velit eget enim. 
-            Sed feugiat libero sit amet augue facilisis placerat. Duis cursus magna imperdiet pretium molestie. 
-            Suspendisse ullamcorper ultrices nisl. Vivamus ut scelerisque orci. 
+    <div id="content2" class="w3-mobile">
+        <p> Connecting to the local community is important for a fundraising product to succeed, so we are offering personalised labels
+        to tailor to your local community and local projects, an example of a label with a community attachment may be the thing you are
+        fundraising for (i.e. pool, local market, classrooms etc).
         </p>
     </div>
+<div class="w3-content w3-section w3-mobile" style="max-width:300px">
+  <img class="mySlides w3-animate-left" src="images/slide1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-left" src="images/slide2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-left" src="images/slide3.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
     <!-- End of Main Div -->
     </div>
 </body>
