@@ -1,0 +1,37 @@
+html {
+    background-color: #262626; /* Dark Grey */
+    color: white;
+    font-family: 'inter';
+}
+
+/* Inter Font Face */
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/Inter-Regular.woff2?v=3.19") format("woff2"),
+       url("fonts/Inter-Regular.woff?v=3.19") format("woff");
+}
+
+/* Navigation Bar Style */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #303030;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+}
+
